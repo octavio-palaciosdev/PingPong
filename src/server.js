@@ -5,4 +5,4 @@ const server = app.listen(app.get('port'), () => {
   console.log('servidor en puerto', app.get('port'));
 });
 
-module.exports = { server };
+module.exports = server;

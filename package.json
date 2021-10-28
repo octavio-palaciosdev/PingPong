@@ -4,8 +4,8 @@
   "description": "A pingpong point tracking system",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "project": "node src/app.js",
+    "dev": "nodemon src/server.js",
+    "project": "node src/server.js",
     "test": "jest"
   },
   "repository": {

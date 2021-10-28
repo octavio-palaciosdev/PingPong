@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const request = require('supertest');
-const app = require('../src/app');
+const app = require('../src/server');
 const { mysqlConnection } = require('../src/database/database');
 
 afterEach(() => app.close());
