@@ -16,7 +16,8 @@ You will need:
 
 ### Instalation 🔧
 
-Database
+**Database**
+
 There is a dbDump.sql file that will contain the script to create the database.
 Additionaly you will have to configure the database.js file with your credentials.
  ``` 
@@ -50,7 +51,7 @@ npm test
 
 ## Author ✒️
 
-* **Octavio Palacios ** - *Trabajo Inicial* - [villanuevand](https://github.com/octaviopalacioscodanai/)
+* **Octavio Palacios ** - [octavioPalaciosDev](https://github.com/octaviopalacioscodanai/)
 
 ## License 📄
 
