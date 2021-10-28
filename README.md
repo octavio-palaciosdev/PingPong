@@ -15,7 +15,19 @@ You will need:
 * Mysql
 
 ### Instalation 🔧
-Once you fulfill the pre-requisites, all you need is to do a simple.
+
+Database
+There is a dbDump.sql file that will contain the script to create the database.
+Additionaly you will have to configure the database.js file with your credentials.
+  host: 'localhost',
+  port: 3306,
+  user: '',
+  password: '',
+  database: 'PingPong',
+This is what you will find under this file,
+
+
+Once you fulfill the pre-requisites and set up the database all you need is to do a simple.
 ```
 npm install 
 npm run dev
@@ -29,9 +41,6 @@ npm test
 ```
 
 ## Built with 🛠️
-
-
-
 * [Node](https://nodejs.org/en/) - backend
 * [express](https://expressjs.com/es/) - express
 * [mysql](https://www.mysql.com/) - Database
