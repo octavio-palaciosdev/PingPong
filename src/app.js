@@ -1,22 +1,23 @@
 const express = require('express');
+
 const app = express();
-const gameRoutes = require('./routes/games')
+const gameRoutes = require('./routes/games');
 
 app.set('port', process.env.PORT || 3000);
 
-//Middleware
+// Middleware
 app.use(express.json());
 app.set('view engine', 'ejs');
-//Routes
-app.get('/', async function(req, res) {
-    res.render('index');
+// Routes
+app.get('/', async (req, res) => {
+  res.render('index');
 });
 
 app.use('/api', gameRoutes);
 
-//Server
-const server = app.listen(app.get('port'), ()=> {
-    console.log('servidor en puerto', app.get('port'));
+// Server
+const server = app.listen(app.get('port'), () => {
+  console.log('servidor en puerto', app.get('port'));
 });
 
-module.exports = server
+module.exports = server;
