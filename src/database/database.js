@@ -11,12 +11,13 @@ const dbConfig = {
 
 const mysqlConnection = mysql.createConnection(dbConfig);
 
-mysqlConnection.connect(async (err) => {
-    if(err) {
-        console.err(err)
-    } else {
-        //console.log('Connected')
-    }
-})
+    mysqlConnection.connect(async (err) => {
+        if(err) {
+            console.err(err)
+        } else {
+            //console.log('Connected')
+        }
+    })
+
 
 module.exports = {mysqlConnection};
