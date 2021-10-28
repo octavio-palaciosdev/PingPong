@@ -1,19 +1,14 @@
 const express = require('express');
+
 const games = express.Router();
-const gamesController = require('../controllers/gamesController.js')
+const gamesController = require('../controllers/gamesController');
 
+games.post('/savegame', async (req, res) => {
+  const { gameData } = req.body;
 
-games.post('/savegame',async function(req, res){
-    
-    let gameData = req.body.gameData;
-
-    await gamesController.saveGame(gameData)
-    .then(neoGame => {
-        return res.status(201).json({data:neoGame});
-    })
-    .catch(err =>{
-        if(err.code === "5004077685") return res.status(500).json(err);
-    });;
+  await gamesController.saveGame(gameData)
+    .then((neoGame) => res.status(201).json({ data: neoGame }))
+    .catch((err) => res.status(500).json(err));
 });
 
 module.exports = games;
