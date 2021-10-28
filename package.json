@@ -1,0 +1,37 @@
+{
+  "name": "pingpongrn",
+  "version": "1.0.0",
+  "description": "A pingpong point tracking system",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "project": "node src/app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octaviopalacioscodanai/pingPongRN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octaviopalacioscodanai/pingPongRN/issues"
+  },
+  "homepage": "https://github.com/octaviopalacioscodanai/pingPongRN#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.14",
+    "supertest": "^6.1.6"
+  }
+}
