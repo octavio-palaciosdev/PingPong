@@ -1,0 +1,13 @@
+.cardx{
+  background-color:rgb(71, 71, 71);
+  width: 400px;
+  height: 600px;
+}
+
+.playerName{
+    color: rgb(190, 190, 190);
+}
+
+.secText{
+    color: rgb(206, 206, 206);
+}
