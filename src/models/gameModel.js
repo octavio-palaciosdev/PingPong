@@ -21,8 +21,10 @@ const newGame = async (gameData) => {
         };
         resolve(data);
       })
-      .catch(() => {
-        reject({ success: false, message: 'Server error', code: '5004077685' });
+      .catch((err) => {
+        reject({
+          error: err, success: false, message: 'Server error', code: '500407768500',
+        });
       });
   });
 };
