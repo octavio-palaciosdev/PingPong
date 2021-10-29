@@ -35,6 +35,9 @@ Once you fulfill the pre-requisites and set up the database all you need is to d
 npm install 
 npm run dev
 ```
+## First steps
+
+You can go to localhost:3000 in your browser, that will load up the main screen for the project.
 
 ## Tests ⚙️
 To run tests, you must close the server (CTRL + C)
